@@ -1,0 +1,476 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0% 2%;
+    background-color: #fff;
+    height: 60px;
+    box-shadow: 0px 2px 20px rgba(1, 41, 112, 0.1);
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+}
+nav div{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-flow: row nowrap;
+    width: 30%;
+    gap: 2%;
+}
+
+#ft{
+    width: 40%;
+}
+#ft img{
+    width: 45px;
+    height: 50px;
+}
+button{
+    border: none;
+    background-color: transparent;
+    font-weight: 600;
+    font-size: 1.3rem;
+    cursor: pointer;
+    color: #4154F1;
+}
+#btn{
+    padding: 0 15px;
+}
+#btn1{
+    display: none;
+}
+h1 , h5 , .stl h3 ,.stl i{
+    color: #012970;
+}
+h1::first-letter{
+    color: #4154F1;
+    font-size: 2.2rem;
+}
+input[type='search']{
+    width: 100%;
+    border: #4154F1 solid 2px;
+    border-radius: 5px;
+    height: 30px;
+}
+input::placeholder{
+    position: relative;
+    left: 2px;
+    color: #012970;
+}
+#btn2{
+    position: absolute;
+    right: 41%;
+    color: #012970;
+}
+#td{
+    width: 40%;
+    justify-content: flex-end;
+    gap: 10px;
+}
+.td{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    border: #012970 solid 1px;
+    width: 40px;
+    height: 40px;
+}
+.td img{
+    width: 70%;
+}
+.tddiv h5{
+    font-weight: 500;
+}
+#tddiv{
+    width: 30%;
+    justify-content: center;
+    align-items: center;
+}
+#tddiv ~ details{
+    font-size: 0.8rem;
+    font-weight: 500;
+}
+#tddiv ~ details[open]{
+    position: relative;
+    right: 90px;
+    top: 80px;
+}
+#tddiv ~ details[open] {
+    position: absolute;
+    right: 0px;
+    top: 61px;
+}
+#tddiv ~ details[open] summary{
+    position: absolute;
+    right: 110px;
+    top: -10px;
+    font-weight: 700;
+    font-size: 1rem;
+    color: #4154F1;
+}
+#tddiv ~ details[open] .stl:hover , .stle:hover {
+    background-color: #4154F1;
+    border-radius: 12px;
+}
+.stle details{
+    width: 100%;
+}
+.stle details a{
+    padding-left: 8%;
+    width: 100%;
+}
+summary{
+    cursor: pointer;
+    color: #4154F1;
+}
+.stle:hover summary{
+    color: #012970;
+}
+.stle summary{
+    width: 100%;
+    color: #4154F1;
+}
+.styled{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column nowrap;
+    box-shadow: -4px 11px 18px 14px rgba(1, 41, 112, 0.1);
+    width: 240px;
+}
+.styled a{
+    text-decoration: none;
+    background-color: #fff;
+}
+.stl{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding-left: 20%;
+    width: 100%;
+    height: 50px;
+    border-bottom: #012970 1px solid;
+    gap: 8%;
+}
+.stl:hover h3 , .stle:hover a {
+    color: #fff;
+}
+.stl:hover i , .stle:hover i{
+    color: #012970;
+}
+.stle:hover summary{
+    color: #012970;
+}
+.stle details{
+    width: 100%;
+}
+.stle summary{
+    width: 100%;
+    color: #4154F1;
+}
+.stle details a{
+    padding-left: 8%;
+    width: 100%;
+}
+.stle a{
+    color: #012970;
+    text-decoration: none;
+    font-size: 1.1rem;
+    font-weight: 400;
+}
+.stle{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding-left: 20%;
+    width: 90%;
+    gap: 8%;
+    height: 9vh;
+}
+h1 , h5 , .stl h3 ,.stl i{
+    color: #012970;
+}
+.stle i , .stl i , #iii{
+    font-weight: 700;
+    font-size: 1rem;
+    color: #4154F1;
+}
+.stl h3{
+    font-weight: 400;
+}
+#section{
+    padding-top: 60px;
+    display: grid;
+    grid-template-columns: 22% 77.5%;
+    grid-template-areas: "lt rt";
+    justify-content: space-between;
+}
+#lt{
+    grid-area: lt;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-flow: column nowrap;
+    gap: 2vh;
+    box-shadow:-7px -4px 20px 0px #012970;
+    padding-top: 2vh;
+}
+.all{
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    flex-flow: row wrap;
+    width: 100%;
+    height: 75vh;
+    margin-top: 2%;
+}
+#rt{
+    grid-area: rt;
+    background-color: #EFF2FA;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-flow: column nowrap;
+    padding: 2vh 3%;
+}
+.tp h2{
+    color: #012970;
+    font-weight: 500;
+}
+.tp h4{
+    color: #4154F1;
+    font-weight: 500;
+    font-size: 1.1rem;
+    cursor: pointer;
+}
+.tp span{
+    position: relative;
+    left: 1px;
+    font-weight: 400;
+    color: #012970;
+    font-size: 0.9rem;
+    cursor: pointer;
+}
+.big{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-flow: row wrap;
+    width: 50%;
+    height: 90.5%;
+}
+.type{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-flow: column nowrap;
+    width: 48%;
+    background-color: #fff;
+    height: 86%;
+    gap: 3%;
+    border-radius: 5px;
+    box-shadow: 0px 0 30px rgba(1, 41, 112, 0.1);
+    padding: 20px;
+    margin-top: 1%;
+}
+.bigm{
+    background-color: #fff;
+    width: 47%;
+    border-radius: 5px;
+    box-shadow: 0px 0 30px rgba(1, 41, 112, 0.1);
+    height: 45%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-flow: column nowrap;
+    gap: 7%;
+    padding-left: 35px;
+    padding-top: 25px;
+}
+.bigm i{
+    font-size: 35px;
+    color: #4154F1;
+}
+.bigm h3{
+    font-weight: 600;
+    color: #012970 ;
+}
+.bigm h4{
+    font-weight: 500;
+    color: #012970 ;
+}
+.name, .mail{
+    width: 50%;
+    height: 40px;
+    border: #012970 2px solid;
+    border-radius: 5px;
+}
+.txt {
+    width: 100%;
+    height: 40px;
+    border: #012970 2px solid;
+    border-radius: 5px;
+}
+.area{
+    width: 100%;
+    border: #012970 2px solid;
+    border-radius: 5px;
+}
+.area::placeholder{
+    color: #012970;
+}
+.int{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 5%;
+    width: 100%;
+}
+.do{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+.do input{
+    background-color: #4154F1;
+    color: #fff;
+    border-radius: 15px;
+    border: none;
+    padding: 13px 40px;
+    font-size: 0.9rem;
+    font-weight: 400;
+}
+@media (max-width : 1173px)  and (min-width : 650px) {
+    .all{
+        display: flex;
+        justify-content: flex-start;
+        flex-flow: column nowrap;
+        width: 100%;
+        height: fit-content;
+        gap: 10px;
+    }
+    #lt{
+        grid-area: lt;
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+    h1{
+        font-size: 1.2rem;
+    }
+    h1::first-letter{
+        font-size: 1.9rem;
+    }
+    #tddiv h5{
+        font-size: 0.6rem;
+    }
+    .stle{
+        padding: 4%;
+    }
+    #tddiv{
+        width: 50%;
+        justify-content: center;
+        align-items: center;
+    }
+    .big{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-flow: row wrap;
+        gap: 10px;
+        width: 100%;
+        height: 90.5%;
+        order: 2;
+    }
+    .bigm{
+        padding: 0 0 0 20px;
+        width: 200px;
+        height: 200px;
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        flex-flow: column nowrap;
+    }
+    .type{
+        width: 100%;
+        gap: 5px;
+    }
+}
+@media (max-width : 680px) {
+    .all{
+        display: flex;
+        justify-content: flex-start;
+        flex-flow: column nowrap;
+        width: 100%;
+        height: fit-content;
+        gap: 10px;
+    }
+    #lt{
+        grid-area: lt;
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+       
+    }
+    h1{
+        font-size: 0.8rem;
+    }
+    h1::first-letter{
+        font-size: 1.5rem;
+    }
+    #tddiv h5{
+        font-size: 0.6rem;
+    }
+    .stle{
+        padding: 4%;
+    }
+    #section{
+        padding-top: 60px;
+        display: grid;
+        grid-template-columns: 30% 70%;
+        grid-template-areas: "lt rt";
+        justify-content: space-between;
+    }
+
+    #tddiv{
+        width: 70%;
+        justify-content: center;
+        align-items: center;
+    }
+    .big{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-flow: row wrap;
+        gap: 10px;
+        width: 100%;
+        height: 90.5%;
+    }
+    .bigm{
+        padding: 0 0 0 20px;
+        width: 200px;
+        height: 200px;
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        flex-flow: column nowrap;
+    }
+    .type{
+        width: 100%;
+        order: -2;
+        gap: 5px;
+    }
+    
+}
